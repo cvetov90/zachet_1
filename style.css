@@ -1,0 +1,286 @@
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    background-color: gray;
+    display: grid;
+    grid-template: 44px 80px 810px 730px repeat(5, 1fr) / repeat(2, 1fr);
+    min-height: 100vh;
+}
+
+.top-line {
+    background-color: black;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top-line div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: gray;
+    flex: 1 1 auto;
+}
+
+.top-line>div:nth-child(1) {
+    position: absolute;
+    left: 20%;
+    /* flex: 1 1 auto; */
+}
+
+.top-line>div:nth-child(2) {
+    position: absolute;
+    right: 20%;
+    /* flex: 1 1 auto; */
+}
+
+.second-line {
+    background-color: #0F0F0F;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-line>div {
+    /* flex-grow: 1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+}
+
+.second-line>div:nth-child(1) {
+    font-family: 'Post No Bills Jaffna';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    /* flex-grow: 1; */
+    flex: 1 1 auto;
+
+    position: absolute;
+    left: 20%;
+    /* background-color: black; */
+    /* text-align: center; */
+    /* align-self: center; */
+}
+
+.second-line>div:nth-child(2) {
+    /* flex-grow: 1; */
+    flex: 1 1 auto;
+    /* justify-content: center; */
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    position: absolute;
+    right: 20%;
+}
+
+.menu-item {
+    padding: 31px 20px;
+    color: #969696;
+}
+
+.menu-item:hover,
+.menu-item:active,
+.menu-item:focus {
+    color: white;
+    background-color: #1F1F1F;
+}
+
+#menu-img-1 {
+    padding: 31px 20px 31px 40px;
+}
+
+#menu-img-2 {
+    padding: 31px 0 31px 20px;
+}
+
+.menu-img:hover,
+.menu-img:active,
+.menu-img:focus {
+    width: 120%;
+    height: auto;
+}
+
+.first-screen {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    grid-column: span 2;
+    background-image: url(image/first-screen.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    position: absolute;
+    top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 320px;
+    border: 4px solid #FFFFFF;
+}
+
+.logo>div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Post No Bills Jaffna';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    /* padding-bottom: 10px; */
+    padding-block-end: 0;
+    width: 185px;
+    height: 86px;
+}
+
+.logo>div:nth-child(2) {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 22px; */
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 7px;
+    /* height: 44px; */
+    width: 185px;
+}
+
+.welcom-text {
+    position: absolute;
+    top: 560px;
+    width: 730px;
+    height: 96px;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    /* or 24px */
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.new-collection {
+    background-color: blueviolet;
+    background-image: url(image/new-collection.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.new-collection>div {
+    margin-bottom: 100px;
+    text-align: center;
+
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+
+    width: 376px;
+    height: 146px;
+
+    /* white */
+    color: #FFFFFF;
+}
+
+#new-collection-line {
+    color: #FFFFFF;
+    size: 1px;
+    width: 120px;
+    /* margin: 30px 0; */
+    /* text-align: center; */
+}
+
+.button {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 1px solid #FFFFFF;
+    padding: 12px 28px;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    /* white */
+    color: #FFFFFF;
+}
+
+.new-season {
+    background-color: black;
+    width: 54vw;
+}
+
+.collection-2018 {
+    background-color: chartreuse;
+    grid-column: span 2;
+}
+
+.new-goods {
+    background-color: coral;
+    grid-column: span 2;
+}
+
+.our-brands {
+    background-color: darkseagreen;
+    grid-column: span 2;
+}
+
+.footer {
+    background-color: darkolivegreen;
+    grid-column: span 2;
+}
+
+.last-line {
+    background-color: yellowgreen;
+    grid-column: span 2;
+}
