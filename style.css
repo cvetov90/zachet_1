@@ -10,7 +10,7 @@ body {
 .container {
     background-color: gray;
     display: grid;
-    grid-template: 44px 80px 810px 730px 600px repeat(4, 1fr) / repeat(2, 1fr);
+    grid-template: 44px 80px 810px 730px 600px auto auto repeat(2, 1fr) / repeat(2, 1fr);
     min-height: 100vh;
 }
 
@@ -438,7 +438,7 @@ body {
 .new-goods-product-list {
     margin-top: 72px;
     display: grid;
-    grid-template: repeat(2,1fr) / repeat(4,1fr);
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
     margin-bottom: 110px;
 }
 
@@ -449,8 +449,42 @@ body {
 }
 
 .our-brands {
-    background-color: darkseagreen;
+    background-color: #0F0F0F;
     grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-brands-title {
+
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* white */
+    color: #FFFFFF;
+    margin-top: 60px;
+    margin-bottom: 32px;
+}
+
+.our-brands-line {
+    color: #FFFFFF;
+    size: 1px;
+    width: 120px;
+}
+
+.our-brands-logo {
+    margin-top: 32px;
+    margin-bottom: 80px;
+}
+
+.our-brands-logo-img {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .footer {

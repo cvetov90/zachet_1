@@ -76,6 +76,13 @@
                                     'product_price' => '165 000 руб.'
                                 ]
                                ];
+
+    $our_brands_logo =  [
+                            'brand_logo_1' => 'image/our-brands-logo.png',
+                            'brand_logo_2' => 'image/our-brands-logo.png',
+                            'brand_logo_3' => 'image/our-brands-logo.png',
+                            'brand_logo_4' => 'image/our-brands-logo.png',
+                        ];
 ?>
 
     <div class="container">
@@ -196,6 +203,7 @@
                 </div>
             </div>
         </div>
+        <!-- Раздел готов -->
         <div class="new-goods">
             <div class="new-goods-title">Новые поступления</div>
             <hr class="new-goods-line">
@@ -215,7 +223,16 @@
                 <?php endforeach; ?>
             </div>
         </div>
-        <div class="our-brands">our-brands</div>
+        <!-- Раздел готов. Добавить ссылки на лого брендов -->
+        <div class="our-brands">
+            <div class="our-brands-title">Наши бренды</div>
+            <hr class="our-brands-line">
+            <div class="our-brands-logo">
+                <?php foreach($our_brands_logo as $value): ?>
+                    <img class="our-brands-logo-img" src="<?php	echo $value; ?>" alt="our-brands-logo.png">
+                <?php endforeach; ?>
+            </div>
+        </div>
         <div class="footer">footer</div>
         <div class="last-line">last-line</div>
     </div>
