@@ -233,7 +233,36 @@
                 <?php endforeach; ?>
             </div>
         </div>
-        <div class="footer">footer</div>
+        <div class="footer">
+            <div class="footer-info">
+                <div class="footer-info-title">О магазине</div>
+                <div class="footer-info-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.
+                </div>
+            </div>
+            <div class="footer-category">
+                <div class="footer-category-title">Категории</div>
+                <div class="footer-category-selector">
+                    <button class="footer-button">часы</button>
+                    <button class="footer-button">браслеты</button>
+                    <button class="footer-button">ремни</button>
+                    <button class="footer-button">ювелирные изделия</button>
+                    <button class="footer-button">запонки</button>
+                </div>
+            </div>
+            <div class="footer-mailing">
+                <div class="footer-mailing-title">Рассылка</div>
+                <div class="footer-mailing-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.
+                </div>
+                <div class="footer-mailing-form">
+                    <form>
+                        <input type="text" placeholder="Ваша почта">
+                        <input class="footer-button footer-form-button" type="submit" value="Подписаться">
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="last-line">last-line</div>
     </div>
 </body>
