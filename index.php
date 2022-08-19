@@ -233,6 +233,7 @@
                 <?php endforeach; ?>
             </div>
         </div>
+        <!-- Убрать пробел между полями формы, поднять весь контейнер повыше в соответствии с макетом -->
         <div class="footer">
             <div class="footer-info">
                 <div class="footer-info-title">О магазине</div>
@@ -257,7 +258,7 @@
                 </div>
                 <div class="footer-mailing-form">
                     <form>
-                        <input type="text" placeholder="Ваша почта">
+                        <input class="footer-input-email" type="text" placeholder="Ваша почта">
                         <input class="footer-button footer-form-button" type="submit" value="Подписаться">
                     </form>
                 </div>

@@ -619,12 +619,21 @@ body {
     margin-bottom: 40px;
 }
 
-.footer-mailing-form {
-
-}
+.footer-mailing-form {}
 
 .footer-form-button {
     margin: 0;
+    /* height: 42px; */
+    /* width: 130px; */
+}
+
+.footer-input-email {
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 180px;
+    height: 42px;
+    border: 0;
+    padding-left: 15px;
+    color: #D0D0D0;
 }
 
 .last-line {
