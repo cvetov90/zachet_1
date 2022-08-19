@@ -10,7 +10,7 @@ body {
 .container {
     background-color: gray;
     display: grid;
-    grid-template: 44px 80px 810px 730px repeat(5, 1fr) / repeat(2, 1fr);
+    grid-template: 44px 80px 810px 730px 600px repeat(4, 1fr) / repeat(2, 1fr);
     min-height: 100vh;
 }
 
@@ -296,10 +296,13 @@ body {
 
 .new-season-product-list {
     padding-top: 42px;
+    display: flex;
 }
 
 .new-season-product-item {
     background-color: black;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .new-season-product-image {
@@ -315,7 +318,7 @@ body {
     font-family: 'Playfair Display';
     font-size: 18px;
     line-height: 21px;
-    
+
     /* white */
     color: #FFFFFF;
 
@@ -326,7 +329,7 @@ body {
     font-family: 'Playfair Display';
     font-size: 16px;
     line-height: 19px;
-    
+
     /* light-gray */
     color: #D0D0D0;
 
@@ -334,13 +337,115 @@ body {
 }
 
 .collection-2018 {
-    background-color: chartreuse;
+    /* background-image: url(image/collection-2018.png); */
+    /* background-size: contain; */
+    /* background-position: left; */
+    /* background-repeat: no-repeat; */
+    /* width: 55vw; */
+    background-color: black;
     grid-column: span 2;
+    display: flex;
+}
+
+.collection-2018-image {
+    min-width: 45vw;
+    background-image: url(image/collection-2018.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.collection-2018-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    /* width: 173px; */
+}
+
+.collection-2018-name {
+
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* white */
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.collection-2018-line {
+    color: #FFFFFF;
+    size: 1px;
+    width: 120px;
+}
+
+.collection-2018-description {
+    width: 471px;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    /* or 21px */
+    text-align: center;
+
+    /* white */
+    color: #FFFFFF;
+    margin-top: 32px;
+    margin-bottom: 60px;
+}
+
+.collection-2018-button:hover,
+.collection-2018-button:active,
+.collection-2018-button:focus {
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
 .new-goods {
-    background-color: coral;
+    background-color: black;
     grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-goods-title {
+    margin-top: 120px;
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* white */
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.new-goods-line {
+    color: #FFFFFF;
+    size: 1px;
+    width: 120px;
+}
+
+.new-goods-product-list {
+    margin-top: 72px;
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(4,1fr);
+    margin-bottom: 110px;
+}
+
+.new-goods-product-item {
+    margin-left: 11.5px;
+    margin-right: 11.5px;
+    margin-bottom: 40px;
 }
 
 .our-brands {
