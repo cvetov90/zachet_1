@@ -258,13 +258,19 @@
                 </div>
                 <div class="footer-mailing-form">
                     <form>
-                        <input class="footer-input-email" type="text" placeholder="Ваша почта">
-                        <input class="footer-button footer-form-button" type="submit" value="Подписаться">
+                        <input class="footer-input-email" type="text" placeholder="Ваша почта"><input class="footer-button footer-form-button" type="submit" value="Подписаться">
                     </form>
                 </div>
             </div>
         </div>
-        <div class="last-line">last-line</div>
+        <div class="last-line">
+            <div class="last-line-copyright">
+                © 2020 Все права защищены
+            </div>
+            <div class="last-line-author">
+                Сделано Figma.info
+            </div>
+        </div>
     </div>
 </body>
 
