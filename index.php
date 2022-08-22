@@ -103,14 +103,14 @@
         <div id="second-line">
             <div id="second-line-logo" class="font-logo"><a href="index.php">PORTEN</a></div>
             <div id="second-line-menu" class="font-PT-Sans">
-                <div class="menu-item">Понравилось</div>
-                <div class="menu-item">Личный кабинет</div>
-                <div class="menu-item">Настройки</div>
+                <a href=""><div class="menu-item">Понравилось</div></a>
+                <a href=""><div class="menu-item">Личный кабинет</div></a>
+                <a href=""><div class="menu-item">Настройки</div></a>
                 <div id="menu-img-1">
-                    <img class="menu-img" src="image/cart.png" alt="cart.png">
+                    <a href=""><img class="menu-img" src="image/cart.png" alt="cart.png"></a>
                 </div>
                 <div id="menu-img-2">
-                    <img class="menu-img" src="image/search.png" alt="search.png">
+                    <a href=""><img class="menu-img" src="image/search.png" alt="search.png"></a>
                 </div>
             </div>
         </div>
@@ -139,6 +139,7 @@
             <hr class="line-separator">
             <div id="new-season-product-list">
                 <?php foreach($new_season_products_top3 as $item): ?>
+                    <a href="">
                     <div class="new-season-product-item">
                         <div class="new-season-product-image">
                             <img src="<?php	echo $item['product_image']; ?>" alt="watch.png">
@@ -150,6 +151,7 @@
                             <?php echo $item['product_price']; ?>
                         </div>
                     </div>
+                </a>
                 <?php endforeach; ?>
             </div>
         </div>
@@ -160,7 +162,7 @@
                     Новая коллекция
                 </div>
                 <hr class="line-separator">
-                <button class="button font-PT-Sans">
+                <button class="content-button font-PT-Sans">
                     Каталог
                 </button>
             </div>
@@ -177,7 +179,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam. 
                 </div>
                 <div>
-                    <button class="button font-PT-Sans collection-2018-button">Посмотреть коллекцию</button>
+                    <button class="content-button font-PT-Sans">Посмотреть коллекцию</button>
                 </div>
             </div>
         </div>
@@ -187,6 +189,7 @@
             <hr class="line-separator">
             <div id="new-goods-product-list">
                 <?php foreach($new_goods_products_top8 as $item): ?>
+                    <a href="">
                     <div class="new-season-product-item new-goods-product-item">
                         <div class="new-season-product-image">
                             <img src="<?php	echo $item['product_image']; ?>" alt="watch.png">
@@ -198,6 +201,7 @@
                             <?php echo $item['product_price']; ?>
                         </div>
                     </div>
+                    </a>
                 <?php endforeach; ?>
             </div>
         </div>
@@ -207,7 +211,7 @@
             <hr class="line-separator">
             <div id="our-brands-logo">
                 <?php foreach($our_brands_logo as $value): ?>
-                    <img class="our-brands-logo-img" src="<?php	echo $value; ?>" alt="our-brands-logo.png">
+                    <a href=""><img class="our-brands-logo-img" src="<?php	echo $value; ?>" alt="our-brands-logo.png"></a>
                 <?php endforeach; ?>
             </div>
         </div>

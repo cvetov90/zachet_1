@@ -14,6 +14,11 @@ button, pre {
     font-family: inherit;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .line-separator {
     color: white;
     size: 1px;
@@ -45,6 +50,51 @@ button, pre {
     font-family: 'Post No Bills Jaffna';
     font-style: normal;
     font-weight: 700;
+}
+
+.content-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #FFFFFF;
+    padding: 12px 28px;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.footer-button {
+    background-color: #0F0F0F;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #D0D0D0;
+    transition: 0.5s;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.content-button:hover,
+.content-button:active,
+.content-button:focus,
+.footer-button:hover,
+.footer-button:active,
+.-button:focus {
+    background-color: rgba(31, 31, 31,.9);
+}
+
+.footer-form-button {
+    margin: 0 !important;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.new-season-product-item:hover {
+    background-color: rgba(255, 255, 255, 0.15);
 }
 /* Конец. Повторяющиеся стили  */
 
@@ -89,7 +139,7 @@ button, pre {
     font-size: 12px;
     line-height: 16px;
     color: gray;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 #second-line {
@@ -142,6 +192,10 @@ button, pre {
     color: white;
     background-color: #1F1F1F;
 }
+
+/* .link-nodecor {
+    text-decoration: none;
+} */
 
 #menu-img-1 {
     padding: 31px 20px 31px 40px;
@@ -236,26 +290,6 @@ button, pre {
     height: 146px;
 }
 
-.button {
-    background-color: rgba(0, 0, 0, 0);
-    /* color: white; */
-    border: 1px solid #FFFFFF;
-    padding: 12px 28px;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    transition: 0.5s;
-}
-
-.button:hover,
-.button:active,
-.button:focus {
-    background-color: rgba(31, 31, 31, 0.7);
-}
-
 #new-season {
     display: flex;
     flex-direction: column;
@@ -338,11 +372,11 @@ button, pre {
     margin-bottom: 60px;
 }
 
-.collection-2018-button:hover,
+/* .collection-2018-button:hover,
 .collection-2018-button:active,
 .collection-2018-button:focus {
     background-color: rgba(255, 255, 255, 0.15);
-}
+} */
 
 #new-goods {
     background-color: black;
@@ -361,6 +395,7 @@ button, pre {
 #new-goods-product-list {
     margin-top: 72px;
     display: grid;
+    /* gap: 23px; */
     grid-template: repeat(2, 1fr) / repeat(4, 1fr);
     margin-bottom: 110px;
 }
@@ -495,20 +530,12 @@ button, pre {
 
 #footer-input-email {
     background: rgba(255, 255, 255, 0.4);
-    width: 180px;
+    width: 179px;
     height: 42px;
     border: 0;
     padding: 0 0 0 15px;
     color: #D0D0D0;
     margin-right: 0;
-}
-
-.footer-form-button {
-    box-sizing: border-box;
-    margin: 0;
-    width: 140px;
-    height: 42 px;
-    /* width: 130px; */
 }
 
 #last-line {
