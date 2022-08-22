@@ -72,14 +72,14 @@ button, pre {
     flex: 1 1 auto;
 }
 
-.top-line-info {
+#top-line-info {
     position: absolute;
     left: 20%;
     /* flex: 1 1 auto; */
 
 }
 
-.top-line-login {
+#top-line-login {
     position: absolute;
     right: 20%;
     /* flex: 1 1 auto; */
@@ -120,7 +120,7 @@ button, pre {
     text-decoration: none;
 }
 
-.second-line-menu {
+#second-line-menu {
     /* flex-grow: 1; */
     flex: 1 1 auto;
     font-size: 14px;
@@ -207,7 +207,7 @@ button, pre {
     width: 185px;
 }
 
-.welcom-text {
+#welcom-text {
     position: absolute;
     top: 560px;
     width: 730px;
@@ -269,7 +269,7 @@ button, pre {
     padding-bottom: 42px;
 }
 
-.new-season-product-list {
+#new-season-product-list {
     padding-top: 42px;
     display: flex;
 }
@@ -309,7 +309,7 @@ button, pre {
     display: flex;
 }
 
-.collection-2018-image {
+#collection-2018-image {
     min-width: 45vw;
     background-image: url(image/collection-2018.png);
     background-size: cover;
@@ -317,7 +317,7 @@ button, pre {
     background-repeat: no-repeat;
 }
 
-.collection-2018-text {
+#collection-2018-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -329,7 +329,7 @@ button, pre {
     margin-bottom: 32px;
 }
 
-.collection-2018-description {
+#collection-2018-description {
     width: 471px;
     font-size: 14px;
     line-height: 150%;
@@ -358,7 +358,7 @@ button, pre {
     margin-bottom: 32px;
 }
 
-.new-goods-product-list {
+#new-goods-product-list {
     margin-top: 72px;
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(4, 1fr);
@@ -385,7 +385,7 @@ button, pre {
     margin-bottom: 32px;
 }
 
-.our-brands-logo {
+#our-brands-logo {
     margin-top: 32px;
     margin-bottom: 80px;
 }
@@ -407,7 +407,7 @@ button, pre {
     position: relative;
 }
 
-.footer-content {
+#footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -416,7 +416,7 @@ button, pre {
     width: 60%;
 }
 
-.footer-info {
+#footer-info {
     height: 220px;
     width: 350px;
     display: flex;
@@ -430,12 +430,12 @@ button, pre {
     margin-bottom: 40px;
 }
 
-.footer-info-text {
+#footer-info-text {
     font-size: 14px;
     line-height: 150%;
 }
 
-.footer-category {
+#footer-category {
     height: 220px;
     width: 370px;
     display: flex;
@@ -449,7 +449,7 @@ button, pre {
     margin-bottom: 40px;
 }
 
-.footer-category-selector {
+#footer-category-selector {
     /* display: inline; */
     /* display: flex; */
     /* flex-direction: row; */
@@ -468,7 +468,7 @@ button, pre {
     margin-bottom: 20px;
 }
 
-.footer-mailing {
+#footer-mailing {
     height: 220px;
     width: 350px;
     display: flex;
@@ -481,19 +481,19 @@ button, pre {
     margin-bottom: 40px;
 }
 
-.footer-mailing-text {
+#footer-mailing-text {
     font-size: 14px;
     line-height: 150%;
     margin-bottom: 40px;
 }
 
-/* .footer-mailing-form { */
+/* #footer-mailing-form { */
 /* display: flex; */
 /* justify-content: center; */
 /* align-items: center; */
 /* } */
 
-.footer-input-email {
+#footer-input-email {
     background: rgba(255, 255, 255, 0.4);
     width: 180px;
     height: 42px;
@@ -520,7 +520,7 @@ button, pre {
     position: relative;
 }
 
-.last-line-copyright {
+#last-line-copyright {
     font-size: 12px;
     line-height: 16px;
     color: #D0D0D0;
@@ -529,7 +529,7 @@ button, pre {
     flex-grow: 1;
 }
 
-.last-line-author {
+#last-line-author {
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
