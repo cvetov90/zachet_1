@@ -101,7 +101,7 @@
                 Также нужно переработать меню в список со ссылками, на корзину и поиск также повешать ссылки.
                 Повешать ссылку на логотип в шапке  -->
         <div id="second-line">
-            <div class="second-line-logo"><a href="index.php">PORTEN</a></div>
+            <div id="second-line-logo" class="font-logo"><a href="index.php">PORTEN</a></div>
             <div class="second-line-menu font-PT-Sans">
                 <div class="menu-item">Понравилось</div>
                 <div class="menu-item">Личный кабинет</div>
@@ -116,8 +116,8 @@
         </div>
         <!-- Раздел готов. -->
         <div id="first-screen">
-            <div class="logo">
-                <div>
+            <div id="logo">
+                <div class="font-logo">
                     PORTEN
                 </div>
                 <div class="font-PT-Sans">
