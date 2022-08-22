@@ -1,58 +1,92 @@
-/* как вариант применить к универсальный селектор, либо поставить margin-right для элемента 0 в отношении поля в форме */
-
 body {
     color: white;
+    background-color: black;
     margin: 0;
     padding: 0;
-    position: relative;
+    /* position: relative; */
     top: 0;
     left: 0;
 }
 
-.container {
-    background-color: gray;
+/* Повторяющиеся стили */
+
+button, pre {
+    font-family: inherit;
+}
+
+.line-separator {
+    color: white;
+    size: 1px;
+    width: 120px;
+}
+
+.font-PT-Sans {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.font-PD-36 {
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.font-PD-24 {
+    font-family: 'Playfair Display';
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+/* Конец. Повторяющиеся стили  */
+
+#container-main {
     display: grid;
-    /* display: flex; */
-    /* flex-direction: column; */
     grid-template: 44px 80px 810px 730px 600px auto auto 400px 50px / repeat(2, 1fr);
     min-height: 100vh;
 }
 
-.top-line {
-    background-color: black;
+#top-line {
     grid-column: span 2;
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-
-.top-line div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     color: gray;
+
+}
+
+#top-line>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1 1 auto;
 }
 
-.top-line>div:nth-child(1) {
+.top-line-info {
     position: absolute;
     left: 20%;
     /* flex: 1 1 auto; */
+
 }
 
-.top-line>div:nth-child(2) {
+.top-line-login {
     position: absolute;
     right: 20%;
     /* flex: 1 1 auto; */
 }
 
-.second-line {
+.top-line-link {
+    font-size: 12px;
+    line-height: 16px;
+    color: gray;
+    text-decoration: none;
+}
+
+#second-line {
     background-color: #0F0F0F;
     grid-column: span 2;
     display: flex;
@@ -60,7 +94,7 @@ body {
     align-items: center;
 }
 
-.second-line>div {
+#second-line>div {
     /* flex-grow: 1; */
     display: flex;
     justify-content: center;
@@ -68,7 +102,7 @@ body {
     /* height: 100%; */
 }
 
-.second-line>div:nth-child(1) {
+.second-line-logo a {
     font-family: 'Post No Bills Jaffna';
     font-style: normal;
     font-weight: 700;
@@ -79,19 +113,13 @@ body {
 
     position: absolute;
     left: 20%;
-    /* background-color: black; */
-    /* text-align: center; */
-    /* align-self: center; */
+    color: #fff;
+    text-decoration: none;
 }
 
-.second-line>div:nth-child(2) {
+.second-line-menu {
     /* flex-grow: 1; */
     flex: 1 1 auto;
-    /* justify-content: center; */
-
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -131,11 +159,10 @@ body {
     height: auto;
 }
 
-.first-screen {
+#first-screen {
     position: relative;
     display: flex;
     justify-content: center;
-    /* background-color: brown; */
     grid-column: span 2;
     background-image: url(image/first-screen.png);
     background-size: cover;
@@ -165,26 +192,18 @@ body {
     font-size: 64px;
     line-height: 64px;
     text-align: center;
-    /* color: #FFFFFF; */
     border-bottom: 2px solid #FFFFFF;
-    /* padding-bottom: 10px; */
     padding-block-end: 0;
     width: 185px;
     height: 86px;
 }
 
 .logo>div:nth-child(2) {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
-    /* font-size: 22px; */
     font-size: 22px;
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
-    /* color: #FFFFFF; */
     padding-top: 7px;
-    /* height: 44px; */
     width: 185px;
 }
 
@@ -193,22 +212,13 @@ body {
     top: 560px;
     width: 730px;
     height: 96px;
-
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-
-    /* or 24px */
     text-align: center;
     text-transform: uppercase;
-
-    /* color: #FFFFFF; */
 }
 
-.new-collection {
-    background-color: blueviolet;
+#new-collection {
     background-image: url(image/new-collection.png);
     background-size: cover;
     background-position: center;
@@ -219,29 +229,18 @@ body {
     align-items: center;
 }
 
-.new-collection>div {
+#new-collection-content {
     margin-bottom: 100px;
     text-align: center;
 
-    font-family: 'Playfair Display';
+    /* font-family: 'Playfair Display';
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: uppercase; */
 
     width: 376px;
     height: 146px;
-
-    /* white */
-    /* color: #FFFFFF; */
-}
-
-#new-collection-line {
-    color: #FFFFFF;
-    size: 1px;
-    width: 120px;
-    /* margin: 30px 0; */
-    /* text-align: center; */
 }
 
 .button {
@@ -249,18 +248,12 @@ body {
     /* color: white; */
     border: 1px solid #FFFFFF;
     padding: 12px 28px;
-
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-
-    /* white */
-    color: #FFFFFF; 
+    color: #FFFFFF;
     transition: 0.5s;
 }
 
@@ -270,7 +263,7 @@ body {
     background-color: rgba(31, 31, 31, 0.7);
 }
 
-.new-season {
+#new-season {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -279,23 +272,14 @@ body {
     width: 54vw;
 }
 
-.new-season-title {
-
-    font-family: 'Playfair Display';
+#new-season-title {
+    /* font-family: 'Playfair Display';
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: uppercase; */
 
-    /* white */
-    /* color: #FFFFFF; */
     padding-bottom: 42px;
-}
-
-#new-season-line {
-    color: #FFFFFF;
-    size: 1px;
-    width: 120px;
 }
 
 .new-season-product-list {
@@ -322,10 +306,6 @@ body {
     font-family: 'Playfair Display';
     font-size: 18px;
     line-height: 21px;
-
-    /* white */
-    /* color: #FFFFFF; */
-
     margin-top: 25px;
 }
 
@@ -333,20 +313,11 @@ body {
     font-family: 'Playfair Display';
     font-size: 16px;
     line-height: 19px;
-
-    /* light-gray */
     color: #D0D0D0;
-
     margin-top: 10px;
 }
 
-.collection-2018 {
-    /* background-image: url(image/collection-2018.png); */
-    /* background-size: contain; */
-    /* background-position: left; */
-    /* background-repeat: no-repeat; */
-    /* width: 55vw; */
-    background-color: black;
+#collection-2018 {
     grid-column: span 2;
     display: flex;
 }
@@ -365,42 +336,22 @@ body {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    /* width: 173px; */
 }
 
-.collection-2018-name {
-
-    font-family: 'Playfair Display';
+#collection-2018-name {
+    /* font-family: 'Playfair Display';
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    text-transform: uppercase;
-
-    /* white */
-    /* color: #FFFFFF; */
+    text-transform: uppercase; */
     margin-bottom: 32px;
-}
-
-.collection-2018-line {
-    color: #FFFFFF;
-    size: 1px;
-    width: 120px;
 }
 
 .collection-2018-description {
     width: 471px;
-
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-
-    /* or 21px */
     text-align: center;
-
-    /* white */
-    /* color: #FFFFFF; */
     margin-top: 32px;
     margin-bottom: 60px;
 }
@@ -411,7 +362,7 @@ body {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-.new-goods {
+#new-goods {
     background-color: black;
     grid-column: span 2;
     display: flex;
@@ -420,23 +371,14 @@ body {
     align-items: center;
 }
 
-.new-goods-title {
+#new-goods-title {
     margin-top: 120px;
-    font-family: 'Playfair Display';
+    /* font-family: 'Playfair Display';
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    text-transform: uppercase;
-
-    /* white */
-    /* color: #FFFFFF; */
+    text-transform: uppercase; */
     margin-bottom: 32px;
-}
-
-.new-goods-line {
-    color: #FFFFFF;
-    size: 1px;
-    width: 120px;
 }
 
 .new-goods-product-list {
@@ -452,7 +394,7 @@ body {
     margin-bottom: 40px;
 }
 
-.our-brands {
+#our-brands {
     background-color: #0F0F0F;
     grid-column: span 2;
     display: flex;
@@ -461,24 +403,14 @@ body {
     align-items: center;
 }
 
-.our-brands-title {
-
-    font-family: 'Playfair Display';
+#our-brands-title {
+    /* font-family: 'Playfair Display';
     font-size: 36px;
     line-height: 42px;
     text-align: center;
-    text-transform: uppercase;
-
-    /* white */
-    /* color: #FFFFFF; */
+    text-transform: uppercase; */
     margin-top: 60px;
     margin-bottom: 32px;
-}
-
-.our-brands-line {
-    color: #FFFFFF;
-    size: 1px;
-    width: 120px;
 }
 
 .our-brands-logo {
@@ -491,8 +423,7 @@ body {
     margin-right: 15px;
 }
 
-.footer {
-    /* background-color: darkolivegreen; */
+#footer {
     grid-column: span 2;
     background-image: url(image/footer.png);
     background-size: cover;
@@ -502,7 +433,6 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-
 }
 
 .footer-content {
@@ -524,28 +454,17 @@ body {
     margin-right: 30px;
 }
 
-.footer-info-title {
-    font-family: 'Playfair Display';
+#footer-info-title {
+    /* font-family: 'Playfair Display';
     font-size: 24px;
     line-height: 28px;
-    text-transform: uppercase;
-
-    /* white */
-    /* color: #FFFFFF; */
+    text-transform: uppercase; */
     margin-bottom: 40px;
 }
 
 .footer-info-text {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-
-    /* or 21px */
-
-    /* white */
-    /* color: #FFFFFF; */
 }
 
 .footer-category {
@@ -558,14 +477,11 @@ body {
     margin-right: 50px;
 }
 
-.footer-category-title {
-    font-family: 'Playfair Display';
+#footer-category-title {
+    /* font-family: 'Playfair Display';
     font-size: 24px;
     line-height: 28px;
-    text-transform: uppercase;
-
-    /* white */
-    /* color: #FFFFFF; */
+    text-transform: uppercase; */
     margin-bottom: 40px;
 }
 
@@ -577,24 +493,13 @@ body {
 }
 
 .footer-button {
-
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-
-    /* identical to box height, or 21px */
-
-    /* light-gray */
     color: #D0D0D0;
-
     padding: 10px 20px;
     transition: 0.5s;
     background-color: #0F0F0F;
-    /* color: white; */
     border: 1px solid #0F0F0F;
-    /* padding: 12px 28px; */
     margin-right: 20px;
     margin-bottom: 20px;
 }
@@ -608,36 +513,24 @@ body {
     align-items: flex-start;
 }
 
-.footer-mailing-title {
-
-    font-family: 'Playfair Display';
+#footer-mailing-title {
+    /* font-family: 'Playfair Display';
     font-size: 24px;
     line-height: 28px;
-    text-transform: uppercase;
-
-    /* white */
-    /* color: #FFFFFF; */
+    text-transform: uppercase; */
     margin-bottom: 40px;
 }
 
 .footer-mailing-text {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 150%;
-
-    /* or 21px */
-
-    /* white */
-    /* color: #FFFFFF; */
     margin-bottom: 40px;
 }
 
 /* .footer-mailing-form { */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+/* display: flex; */
+/* justify-content: center; */
+/* align-items: center; */
 /* } */
 
 .footer-input-email {
@@ -653,12 +546,12 @@ body {
 .footer-form-button {
     box-sizing: border-box;
     margin: 0;
-    width: 140px;   
-    height:  42 px;
+    width: 140px;
+    height: 42 px;
     /* width: 130px; */
 }
 
-.last-line {
+#last-line {
     background-color: #0F0F0F;
     grid-column: span 2;
     display: flex;
@@ -668,15 +561,8 @@ body {
 }
 
 .last-line-copyright {
-    font-family: 'PT Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    
-    /* identical to box height */
-    
-    /* light-gray */
     color: #D0D0D0;
     position: absolute;
     left: 20%;
@@ -684,19 +570,139 @@ body {
 }
 
 .last-line-author {
-    font-family: 'PT Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
-    
-    /* identical to box height */
-    /* text-align: right; */
     text-decoration-line: underline;
-    
-    /* light-gray */
     color: #D0D0D0;
     position: absolute;
     right: 20%;
     flex-grow: 1;
+}
+
+/* Стили страницы входа */
+
+.container-login {
+    display: grid;
+    grid-template: 44px 80px 810px 400px 50px / repeat(2, 1fr);
+    min-height: 100vh;
+}
+
+.window {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+}
+
+.window form {
+    width: 100%;
+}
+
+.form-item {
+    margin: 10px;
+}
+
+.form-item input {
+    height: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding-left: 15px;
+    transition: 0.5s;
+    background: rgba(255, 255, 255, 0.4);
+    color: #D0D0D0;
+}
+
+.form-item input:hover,
+.form-item input:focus,
+.form-item input:active {
+    border: 1px solid white;
+    background-color: #666cff;
+    color: white;
+}
+
+
+.form-item input::placeholder {
+    font-family: sans-serif;
+}
+
+.form-item input:hover::placeholder,
+.form-item input:focus::placeholder,
+.form-item input:active::placeholder {
+    color: white;
+}
+
+
+.btn {
+    border: 0;
+    border-radius: 30px;
+    background-color: #666cff;
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn:hover {
+    border: 3px solid #666cff;
+    background-color: #fff;
+}
+
+/* Свойста модального окна */
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.emailUser {
+    font-weight: bold;
+    text-decoration: underline;
+    color: blue;
 }
