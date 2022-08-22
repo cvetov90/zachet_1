@@ -12,6 +12,8 @@ body {
 .container {
     background-color: gray;
     display: grid;
+    /* display: flex; */
+    /* flex-direction: column; */
     grid-template: 44px 80px 810px 730px 600px auto auto 400px 50px / repeat(2, 1fr);
     min-height: 100vh;
 }
@@ -133,7 +135,7 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
-    background-color: brown;
+    /* background-color: brown; */
     grid-column: span 2;
     background-image: url(image/first-screen.png);
     background-size: cover;
@@ -163,7 +165,7 @@ body {
     font-size: 64px;
     line-height: 64px;
     text-align: center;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     border-bottom: 2px solid #FFFFFF;
     /* padding-bottom: 10px; */
     padding-block-end: 0;
@@ -180,7 +182,7 @@ body {
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     padding-top: 7px;
     /* height: 44px; */
     width: 185px;
@@ -202,7 +204,7 @@ body {
     text-align: center;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
 }
 
 .new-collection {
@@ -231,7 +233,7 @@ body {
     height: 146px;
 
     /* white */
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
 }
 
 #new-collection-line {
@@ -244,7 +246,7 @@ body {
 
 .button {
     background-color: rgba(0, 0, 0, 0);
-    color: white;
+    /* color: white; */
     border: 1px solid #FFFFFF;
     padding: 12px 28px;
 
@@ -258,7 +260,7 @@ body {
     text-transform: uppercase;
 
     /* white */
-    color: #FFFFFF;
+    color: #FFFFFF; 
     transition: 0.5s;
 }
 
@@ -286,7 +288,7 @@ body {
     text-transform: uppercase;
 
     /* white */
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     padding-bottom: 42px;
 }
 
@@ -322,7 +324,7 @@ body {
     line-height: 21px;
 
     /* white */
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
 
     margin-top: 25px;
 }
@@ -375,7 +377,7 @@ body {
     text-transform: uppercase;
 
     /* white */
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     margin-bottom: 32px;
 }
 
@@ -398,7 +400,7 @@ body {
     text-align: center;
 
     /* white */
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     margin-top: 32px;
     margin-bottom: 60px;
 }
@@ -427,7 +429,7 @@ body {
     text-transform: uppercase;
 
     /* white */
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     margin-bottom: 32px;
 }
 
@@ -468,7 +470,7 @@ body {
     text-transform: uppercase;
 
     /* white */
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     margin-top: 60px;
     margin-bottom: 32px;
 }
@@ -499,6 +501,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    width: 60%;
 }
 
 .footer-info {
@@ -518,7 +531,7 @@ body {
     text-transform: uppercase;
 
     /* white */
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     margin-bottom: 40px;
 }
 
@@ -532,7 +545,7 @@ body {
     /* or 21px */
 
     /* white */
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
 }
 
 .footer-category {
@@ -540,7 +553,7 @@ body {
     width: 370px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-st art;
+    justify-content: flex-start;
     align-items: flex-start;
     margin-right: 50px;
 }
@@ -552,7 +565,7 @@ body {
     text-transform: uppercase;
 
     /* white */
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     margin-bottom: 40px;
 }
 
@@ -603,7 +616,7 @@ body {
     text-transform: uppercase;
 
     /* white */
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     margin-bottom: 40px;
 }
 
@@ -617,7 +630,7 @@ body {
     /* or 21px */
 
     /* white */
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     margin-bottom: 40px;
 }
 
@@ -629,7 +642,7 @@ body {
 
 .footer-input-email {
     background: rgba(255, 255, 255, 0.4);
-    width: 190px;
+    width: 180px;
     height: 42px;
     border: 0;
     padding: 0 0 0 15px;
@@ -649,6 +662,7 @@ body {
     background-color: #0F0F0F;
     grid-column: span 2;
     display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -665,7 +679,7 @@ body {
     /* light-gray */
     color: #D0D0D0;
     position: absolute;
-    left: 21%;
+    left: 20%;
     flex-grow: 1;
 }
 
@@ -683,6 +697,6 @@ body {
     /* light-gray */
     color: #D0D0D0;
     position: absolute;
-    right: 21%;
+    right: 20%;
     flex-grow: 1;
 }

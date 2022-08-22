@@ -235,12 +235,13 @@
         </div>
         <!-- Убрать пробел между полями формы, поднять весь контейнер повыше в соответствии с макетом -->
         <div class="footer">
-            <div class="footer-info">
-                <div class="footer-info-title">О магазине</div>
-                <div class="footer-info-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.
+            <div class="footer-content"> 
+                <div class="footer-info">
+                    <div class="footer-info-title">О магазине</div>
+                    <div class="footer-info-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.
+                    </div>
                 </div>
-            </div>
             <div class="footer-category">
                 <div class="footer-category-title">Категории</div>
                 <div class="footer-category-selector">
@@ -262,6 +263,7 @@
                     </form>
                 </div>
             </div>
+        </div>
         </div>
         <div class="last-line">
             <div class="last-line-copyright">
