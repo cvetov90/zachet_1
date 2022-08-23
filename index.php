@@ -17,6 +17,7 @@
 <body>
 
 <?php
+// Массивы с информацией о товарах для генерации каточек на главной странице
     $new_season_products_top3 = [
                                 [
                                     'product_image' => 'image/watch.png',
@@ -76,7 +77,7 @@
                                     'product_price' => '165 000 руб.'
                                 ]
                                ];
-
+// Массив с путями к изображениям логотипов брендов для вывода в соответствующем разделе
     $our_brands_logo =  [
                             'brand_logo_1' => 'image/our-brands-logo.png',
                             'brand_logo_2' => 'image/our-brands-logo.png',
@@ -86,7 +87,6 @@
 ?>
 
     <div id="container-main">
-        <!-- Раздел готов. Нужно разобраться с наложением элементов при уменьшении масштаба страницы -->
         <div id="top-line" class="font-PT-Sans">
             <div id="top-line-info">
                 <img src="image/phone.png" alt="phone.png">
@@ -97,9 +97,6 @@
                 <pre><a class="top-line-link" href="login.php">  Войти</a> / <a class="top-line-link" href="reg.php">Регистрация</a></pre>
             </div>
         </div>
-        <!--  Раздел готов. Нужно разобраться с наложением элементов при уменьшении масштаба страницы.
-                Также нужно переработать меню в список со ссылками, на корзину и поиск также повешать ссылки.
-                Повешать ссылку на логотип в шапке  -->
         <div id="second-line">
             <div id="second-line-logo" class="font-logo"><a href="index.php">PORTEN</a></div>
             <div id="second-line-menu" class="font-PT-Sans">
@@ -114,7 +111,6 @@
                 </div>
             </div>
         </div>
-        <!-- Раздел готов. -->
         <div id="first-screen">
             <div id="logo">
                 <div class="font-logo">
@@ -131,7 +127,6 @@
                 dui nisl viverra.
             </div>
         </div>
-        <!-- Раздел готов. Добавить анимацию на карточки товаров -->
         <div id="new-season">
             <div id="new-season-title" class="font-PD-36">
                 Cезон 2020/21
@@ -155,7 +150,6 @@
                 <?php endforeach; ?>
             </div>
         </div>
-        <!-- Раздел готов. Добавить ссылку на кнопку -->
         <div id="new-collection">
             <div id="new-collection-content" class="font-PD-36">
                 <div>
@@ -163,13 +157,10 @@
                 </div>
                 <hr class="line-separator">
                 <a class="content-button font-PT-Sans" href="">
-                    <!-- <span> -->
                         Каталог
-                    <!-- </span>     -->
                 </a>
             </div>
         </div>
-        <!-- Раздел готов -->
         <div id="collection-2018">
             <div id="collection-2018-image"></div>
             <div id="collection-2018-text">
@@ -181,13 +172,10 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam. 
                 </div>
                 <a class="content-button font-PT-Sans" href="">
-                    <!-- <span> -->
                         Посмотреть коллекцию
-                    <!-- </span> -->
                 </a>
             </div>
         </div>
-        <!-- Раздел готов -->
         <div id="new-goods">
             <div id="new-goods-title" class="font-PD-36">Новые поступления</div>
             <hr class="line-separator">
@@ -209,7 +197,6 @@
                 <?php endforeach; ?>
             </div>
         </div>
-        <!-- Раздел готов. Добавить ссылки на лого брендов -->
         <div id="our-brands">
             <div id="our-brands-title" class="font-PD-36">Наши бренды</div>
             <hr class="line-separator">
@@ -219,7 +206,6 @@
                 <?php endforeach; ?>
             </div>
         </div>
-        <!-- Убрать пробел между полями формы, поднять весь контейнер повыше в соответствии с макетом -->
         <div id="footer">
             <div id="footer-content"> 
                 <div id="footer-info">

@@ -25,7 +25,6 @@ $our_brands_logo =  [
 ?>
 
     <div class="container-login">
-                <!-- Раздел готов. Нужно разобраться с наложением элементов при уменьшении масштаба страницы -->
                 <div id="top-line" class="font-PT-Sans">
                     <div id="top-line-info">
                         <img src="image/phone.png" alt="phone.png">
@@ -36,9 +35,6 @@ $our_brands_logo =  [
                         <pre><a class="top-line-link" href="login.php">  Войти</a> / <a class="top-line-link" href="reg.php">Регистрация</a></pre>
                     </div>
                 </div>
-                <!--  Раздел готов. Нужно разобраться с наложением элементов при уменьшении масштаба страницы.
-                        Также нужно переработать меню в список со ссылками, на корзину и поиск также повешать ссылки.
-                        Повешать ссылку на логотип в шапке  -->
                 <div id="second-line">
                     <div id="second-line-logo" class="font-logo"><a href="index.php">PORTEN</a></div>
                     <div id="second-line-menu" class="font-PT-Sans">
@@ -53,7 +49,6 @@ $our_brands_logo =  [
                         </div>
                     </div>
                 </div>
-                <!-- Раздел готов. -->
                 <div id="first-screen">
                     <div class="window">
                         <div class="font-PD-36">
@@ -94,14 +89,12 @@ $our_brands_logo =  [
                 </div>
 
                     <div id="myModal" class="modal">
-                    <!-- Modal content -->
                         <div class="modal-content">
                             <span class="close">&times;</span>
                             <p id="modalText"></p>
                        </div>
                     </div>
                 </div>
-                <!-- Раздел готов. Добавить ссылки на лого брендов -->
                 <div id="our-brands">
                     <div id="our-brands-title" class="font-PD-36">Наши бренды</div>
                     <hr class="line-separator">
@@ -111,7 +104,6 @@ $our_brands_logo =  [
                         <?php endforeach; ?>
                     </div>
                 </div>
-                <!-- Убрать пробел между полями формы, поднять весь контейнер повыше в соответствии с макетом -->
                 <div id="footer">
                     <div id="footer-content"> 
                         <div id="footer-info">

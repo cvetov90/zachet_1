@@ -5,10 +5,9 @@ var span = document.getElementsByClassName("close")[0];
 
 var myForm = document.getElementById("form");
 
-// Вставка текста в модальное окно
+// Вставка информации в модальное окно
 myForm.addEventListener('submit', function (event) {
     var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
     event.preventDefault();
     document.getElementById("modalText").innerHTML = "Пользователь с email: <span class=\"emailUser\">" + email + "</span>\
     не зарегистрирован.<br><br>Пожалуйста, <a href=\"reg.php\">зарегистрируйтесь</a>";

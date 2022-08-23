@@ -91,7 +91,7 @@ a:focus {
 .content-button:focus,
 .footer-button:hover,
 .footer-button:active,
-.-button:focus {
+.footer-button:focus {
     background-color: rgba(31, 31, 31,.9);
 }
 
@@ -99,6 +99,7 @@ a:focus {
     margin: 0 !important;
     text-transform: uppercase;
     color: #fff;
+    /* width: auto; */
 }
 
 .new-season-product-item:hover {
