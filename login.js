@@ -11,7 +11,7 @@ myForm.addEventListener('submit', function (event) {
     var password = document.getElementById('password').value;
     event.preventDefault();
     document.getElementById("modalText").innerHTML = "Пользователь с email: <span class=\"emailUser\">" + email + "</span>\
-    не зарегистрирован.<br><br>Пожалуйста, <a href=\"reg.html\">зарегистрируйтесь</a>";
+    не зарегистрирован.<br><br>Пожалуйста, <a href=\"reg.php\">зарегистрируйтесь</a>";
     modal.style.display = "block";
 })
 

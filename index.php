@@ -90,11 +90,11 @@
         <div id="top-line" class="font-PT-Sans">
             <div id="top-line-info">
                 <img src="image/phone.png" alt="phone.png">
-                <pre> 8 (812) 123-45-67 | Работаем 7 дней в неделю | 9:00 — 18:00</pre>
+                <pre>    8 (812) 123-45-67    |    Работаем 7 дней в неделю    |    9:00 — 18:00</pre>
             </div>
             <div id="top-line-login">
                 <img src="image/login.png" alt="login.png">
-                <pre> <a class="top-line-link" href="login.html">Войти</a> / <a class="top-line-link" href="reg.html">Регистрация</a></pre>
+                <pre><a class="top-line-link" href="login.php">  Войти</a> / <a class="top-line-link" href="reg.php">Регистрация</a></pre>
             </div>
         </div>
         <!--  Раздел готов. Нужно разобраться с наложением элементов при уменьшении масштаба страницы.
@@ -241,7 +241,7 @@
                     </div>
                     <div id="footer-mailing-form">
                         <form>
-                            <input id="footer-input-email" type="text" placeholder="Ваша почта"><input class="footer-button footer-form-button" type="submit" value="Подписаться">
+                            <input id="footer-input-email" class="form-input font-PT-Sans" type="text" placeholder="Ваша почта"><input class="footer-button footer-form-button" type="submit" value="Подписаться">
                         </form>
                     </div>
                 </div>

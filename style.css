@@ -20,6 +20,12 @@ a {
     text-decoration: none;
 }
 
+a:hover,
+a:active,
+a:focus {
+    color: white;
+}
+
 .line-separator {
     color: white;
     size: 1px;
@@ -98,6 +104,21 @@ a {
 .new-season-product-item:hover {
     background-color: rgba(255, 255, 255, 0.15);
 }
+
+.form-input {
+    background: rgba(255, 255, 255, 0.4);
+    border: 0;
+    padding-left: 15px;
+    color: #D0D0D0;
+    margin-right: 0;
+}
+
+.form-input:hover,
+.form-input:active,
+.form-input:focus {
+    color: white;   
+}
+
 /* Конец. Повторяющиеся стили  */
 
 #container-main {
@@ -532,13 +553,8 @@ a {
 /* } */
 
 #footer-input-email {
-    background: rgba(255, 255, 255, 0.4);
-    width: 179px;
+    width: 177px;
     height: 42px;
-    border: 0;
-    padding: 0 0 0 15px;
-    color: #D0D0D0;
-    margin-right: 0;
 }
 
 #last-line {
@@ -574,7 +590,7 @@ a {
 
 .container-login {
     display: grid;
-    grid-template: 44px 80px 810px 400px 50px / repeat(2, 1fr);
+    grid-template: 44px 80px 810px auto 400px 50px / repeat(2, 1fr);
     min-height: 100vh;
 }
 
@@ -594,30 +610,34 @@ a {
 }
 
 .form-item {
-    margin: 10px;
+    margin: 20px;
 }
 
 .form-item input {
-    height: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    padding-left: 15px;
-    transition: 0.5s;
-    background: rgba(255, 255, 255, 0.4);
-    color: #D0D0D0;
+    height: 42px;
+    width: 40%;
+    font-size: 16px;
+    font-family: inherit;
+    /* font-size: 16px; */
+    /* border: 1px solid rgba(255, 255, 255, 0.4); */
+    /* padding-left: 15px; */
+    /* transition: 0.5s; */
+    /* background: rgba(255, 255, 255, 0.4); */
+    /* color: #D0D0D0; */
 }
 
-.form-item input:hover,
+/* .form-item input:hover,
 .form-item input:focus,
 .form-item input:active {
     border: 1px solid white;
     background-color: #666cff;
     color: white;
-}
+} */
 
 
-.form-item input::placeholder {
+/* .form-item input::placeholder {
     font-family: sans-serif;
-}
+} */
 
 .form-item input:hover::placeholder,
 .form-item input:focus::placeholder,
@@ -627,18 +647,25 @@ a {
 
 
 .btn {
-    border: 0;
-    border-radius: 30px;
-    background-color: #666cff;
-    width: 300px;
-    height: 40px;
-    cursor: pointer;
-    transition: 1s;
+    /* border: 0; */
+    /* border-radius: 30px; */
+    /* background-color: #666cff; */
+    width: 40%;
+    /* margin-right: 0; */
+    /* padding: 5px; */
+    /* height: 40px; */
+    /* cursor: pointer; */
+    /* transition: 1s; */
 }
-
+/* 
 .btn:hover {
     border: 3px solid #666cff;
     background-color: #fff;
+} */
+
+.form-footer-reg {
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 /* Свойста модального окна */
@@ -651,7 +678,7 @@ a {
     /* Stay in place */
     z-index: 1;
     /* Sit on top */
-    padding-top: 100px;
+    padding-top: 15vh;
     /* Location of the box */
     left: 0;
     top: 0;
@@ -669,7 +696,7 @@ a {
 
 /* Modal Content */
 .modal-content {
-    background-color: #fefefe;
+    background-color: rgba(255, 255, 255, 0.5);
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
