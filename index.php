@@ -103,9 +103,9 @@
         <div id="second-line">
             <div id="second-line-logo" class="font-logo"><a href="index.php">PORTEN</a></div>
             <div id="second-line-menu" class="font-PT-Sans">
-                <a href=""><div class="menu-item">Понравилось</div></a>
-                <a href=""><div class="menu-item">Личный кабинет</div></a>
-                <a href=""><div class="menu-item">Настройки</div></a>
+                <a  class="menu-item" href="">Понравилось</a>
+                <a  class="menu-item" href="">Личный кабинет</a>
+                <a  class="menu-item" href="">Настройки</a>
                 <div id="menu-img-1">
                     <a href=""><img class="menu-img" src="image/cart.png" alt="cart.png"></a>
                 </div>
@@ -162,9 +162,11 @@
                     Новая коллекция
                 </div>
                 <hr class="line-separator">
-                <button class="content-button font-PT-Sans">
-                    Каталог
-                </button>
+                <a class="content-button font-PT-Sans" href="">
+                    <!-- <span> -->
+                        Каталог
+                    <!-- </span>     -->
+                </a>
             </div>
         </div>
         <!-- Раздел готов -->
@@ -178,9 +180,11 @@
                 <div id="collection-2018-description" class="font-PT-Sans">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam. 
                 </div>
-                <div>
-                    <button class="content-button font-PT-Sans">Посмотреть коллекцию</button>
-                </div>
+                <a class="content-button font-PT-Sans" href="">
+                    <!-- <span> -->
+                        Посмотреть коллекцию
+                    <!-- </span> -->
+                </a>
             </div>
         </div>
         <!-- Раздел готов -->
@@ -227,11 +231,7 @@
                 <div id="footer-category">
                     <div id="footer-category-title" class="font-PD-24">Категории</div>
                     <div id="footer-category-selector" class="font-PT-Sans">
-                        <button class="footer-button">часы</button>
-                        <button class="footer-button">браслеты</button>
-                        <button class="footer-button">ремни</button>
-                        <button class="footer-button">ювелирные изделия</button>
-                        <button class="footer-button">запонки</button>
+                        <a class="footer-button" href="">часы</a><a class="footer-button" href="">браслеты</a><a class="footer-button" href="">ремни</a><a class="footer-button" href="">ювелирные изделия</a><a class="footer-button" href="">запонки</a>
                     </div>
                 </div>
                 <div id="footer-mailing">
